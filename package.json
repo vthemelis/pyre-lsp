@@ -22,7 +22,6 @@
   "scripts": {
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "postinstall": "bun ./node_modules/vscode/bin/install",
     "test": "bun run compile && bun ./node_modules/vscode/bin/test",
     "lint": "tslint --force -p .",
     "prepublish": "bun run compile",
