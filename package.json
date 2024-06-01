@@ -1,12 +1,12 @@
 {
-  "name": "pyre-vscode",
+  "name": "pyre-lsp",
   "version": "0.0.2",
-  "publisher": "fb-pyre-check",
+  "publisher": "vthemelis",
   "engines": {
     "vscode": "^1.15.0"
   },
   "license": "MIT",
-  "displayName": "pyre-vscode",
+  "displayName": "pyre-lsp",
   "description": "VSCode extension for Pyre-check",
   "keywords": [
     "python",
