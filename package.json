@@ -1,6 +1,6 @@
 {
   "name": "pyre-lsp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "vthemelis",
   "engines": {
     "vscode": "^1.15.0"
