@@ -7,6 +7,8 @@
   },
   "license": "MIT",
   "displayName": "pyre-lsp",
+  "icon": "./pyre.png",
+  "repository": "https://github.com/vthemelis/pyre-lsp",
   "description": "VSCode extension for Pyre-check",
   "keywords": [
     "python",
@@ -18,12 +20,13 @@
     "workspaceContains:**/.pyre_configuration"
   ],
   "scripts": {
-    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test",
-    "lint": "tslint --force -p ."
+    "postinstall": "bun ./node_modules/vscode/bin/install",
+    "test": "bun run compile && bun ./node_modules/vscode/bin/test",
+    "lint": "tslint --force -p .",
+    "prepublish": "bun run compile",
+    "publish": "npm version patch && bunx vsce publish"
   },
   "dependencies": {
     "@vscode/python-extension": "^1.0.5",
